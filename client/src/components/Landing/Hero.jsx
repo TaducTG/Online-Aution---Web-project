@@ -3,26 +3,29 @@ import { Link } from "react-router";
 
 export const Hero = () => {
   return (
-    <section className="bg-gray-50 pt-12">
+    <section className="bg-gradient-to-b from-sky-300 to-blue-600 pt-16 pb-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            The Future of 
-            <span className="text-indigo-900 block">Online Auction</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            The Future of
+            <span className="text-blue-100 block">Online Auction</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+
+          <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
             Discover unique items, place competitive bids, and sell your
             treasures to a global audience. Join thousands of buyers and sellers
             in our trusted marketplace.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/signup">
-              <button className="bg-indigo-900 text-white px-8 py-3 rounded-md hover:bg-indigo-800 transition-colors font-medium text-lg">
+              <button className="bg-white text-blue-700 font-semibold px-8 py-3 rounded-md shadow-md hover:bg-blue-50 transition-colors text-lg">
                 Signup
               </button>
             </Link>
+
             <Link to="/login">
-              <button className="bg-white text-indigo-900 border-2 border-indigo-800 px-8 py-3 rounded-md hover:bg-blue-50 transition-colors font-medium text-lg">
+              <button className="bg-transparent text-white border-2 border-white px-8 py-3 rounded-md hover:bg-white/20 transition-colors text-lg">
                 Login
               </button>
             </Link>

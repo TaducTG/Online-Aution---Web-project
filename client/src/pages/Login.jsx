@@ -39,7 +39,7 @@ const Login = () => {
   if (loading) return <LoadingScreen />;
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-sky-300 to-blue-600">
       <main className="flex-grow flex items-center justify-center p-4">
         <div className="w-full max-w-md">
           <div className="bg-white p-8 rounded-sm shadow">

@@ -100,9 +100,11 @@ export const Navbar = () => {
       />
 
       <div
-        className={`fixed top-0 right-0 h-full w-72 bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-full w-72 
+          bg-gradient-to-b from-blue-100 via-blue-300 to-blue-600
+          shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <div className="flex justify-between items-center p-4 border-b border-gray-200">
           <div className="flex items-center space-x-2">
@@ -201,15 +203,18 @@ export const Navbar = () => {
             <div className="mt-6 pt-6 border-t border-gray-200 space-y-4">
               <Link
                 to="/login"
-                className="block w-full py-2 px-4 text-center text-gray-700  border border-gray-300 rounded-md hover:bg-gray-100 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+                className="block w-full py-2 px-4 text-center 
+                  text-white border border-white rounded-md 
+                  hover:bg-white hover:text-indigo-800 
+                  transition-colors"
               >
                 Log in
               </Link>
               <Link
                 to="/signup"
-                className="block w-full py-2 px-4 text-center bg-indigo-800 text-white rounded-md hover:bg-indigo-700 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+                className="block w-full py-2 px-4 text-center 
+                  bg-indigo-800 text-white border border-white rounded-md 
+                  hover:bg-indigo-700 transition-colors"
               >
                 Sign up
               </Link>
